@@ -1,0 +1,54 @@
+<!-- you will cut and paste the nav bar code into this document -->
+<nav class="nav">
+    <div class="nav-container">
+        <a href="/">
+            <img class="site-logo" alt="guit-archive" src="../img/guit-archive logo white.png">
+        </a>
+        <ul class="nav-bar">
+            <li>
+                <a class="nav-bar-item" href="/">Home</a>
+            </li>
+            <li>
+                <a class="nav-bar-item" href="/login">Login</a>
+            </li>
+            <li>
+                <a class="nav-bar-item" href="/about">About</a>
+            </li>
+            <li>
+                <a class="nav-bar-item" onclick="tabDropDown()">Browse Tabs</a>
+            </li>
+        </ul>
+        <ul class="tab-drop-down-menu">
+            <li class="tabMenuItem">
+                <a href="/tabs">Browse Tabs by Song Name</a>
+            </li>
+            <li class="tabMenuItem">
+                <a href="/artists">Browse Tabs by Artist</a>
+            </li>
+            <li class="tabMenuItem" onclick="tabDropDown()">
+                <a>Back</a>
+            </li>
+        </ul>
+    </div>
+    <div class="hburg-menu" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+</nav>
+<ul class="menu">
+    <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+    <li>
+        <a class="menuItem" href="/">Home</a>
+    </li>
+    <li>
+        <a class="menuItem" href="/login">Login</a>
+    </li>
+    <li>
+        <a class="menuItem" href="/about">About</a>
+    </li>
+    <li>
+        <a class="menuItem" href="/tabs">Browse Tabs by Song Name</a>
+    </li>
+    <li>
+        <a class="menuItem" href="/artists">Browse Tabs by Artist</a>
+    </li>
+</ul>

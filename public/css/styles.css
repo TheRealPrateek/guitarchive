@@ -1,0 +1,529 @@
+/* Style sheet */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Shrikhand', cursive;
+}
+
+/* header stylings */
+
+.nav {
+    width: 100%;
+    background-color: black;
+    color: white; 
+    box-sizing: border-box;
+    padding: 1% 3%;
+    padding-right: 4%;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+    font-size: 1.2rem;
+}
+
+.hburg-menu {
+    display: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.hburg-menu:hover, .fa-xmark:hover {
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 3%;
+}
+
+.menuItem {
+    display: none;
+    font-family: 'Shrikhand', cursive;
+    margin: 2rem 4rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+}
+
+.tab-drop-down-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 40%;
+    height: fit-content;
+    transform: translateY(-200%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 55%;
+    right: 0;
+    bottom: 85%;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 2.5%;
+}
+
+.tabMenuItem a {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.tabMenuItem a:hover {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.tabMenuItem a:active {
+    color: red;
+}
+
+.showTabMenu {
+    transform: translateY(0);
+}
+
+.site-logo {
+    width: 30em;
+    height: auto;
+}
+
+/* footer stylings */
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 1.5% 4% 2.5%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot-img {
+    width: 10em;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.dev-info ul {
+    color: white;
+    font-size: 1em;
+}
+
+.dev-info-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    text-decoration: none;
+    color: white;
+}
+
+/* header and footer stylings */
+
+.nav-bar-item, .footer-link, menuItem {
+    font-family: 'Shrikhand', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar-item:hover, .footer-link:hover {
+    cursor: pointer;
+    font-size: 1.15em;
+}
+
+.nav-bar-item:active, .footer-link:active, .menuItem:active {
+    color: red;
+}
+
+/* body stylings */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 3.6% auto;
+    border: solid 2px black;
+    padding: 2.5% 5% 5%;
+}
+
+.scroll-up-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.scroll-up {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: .5em;
+    margin-right: 5%;
+    margin-bottom: 1.5%;
+    margin-top: -2%;
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+.scroll-up:hover {
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login input[submit] {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-lesson {
+    width: 50em;
+    height: 30em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 320px) {
+    .site-logo {
+        width: 12em;
+        height: auto;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1.6rem;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .hburg-menu {
+        display: block;
+        font-size: 1.3em;
+    }
+
+    .hburg-menu:hover {
+        font-size: 1.6em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 3%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .menuItem {
+        display: block;
+    }
+
+    .scroll-up {
+        padding: 4%;
+    }
+
+    .fa-xmark {
+        font-size: 2.5em;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .container {
+        font-size: 1.1rem;
+    }
+
+    .video-lesson {
+        width: 10em;
+        height: 6em;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    .site-logo {
+        width: 15em;
+        height: auto;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1.6rem;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .hburg-menu {
+        display: block;
+        font-size: 1.8em;
+    }
+
+    .hburg-menu:hover {
+        font-size: 2em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 3%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .menuItem {
+        display: block;
+    }
+
+    .scroll-up {
+        padding: 4%;
+    }
+
+    .fa-xmark {
+        font-size: 2.5em;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .container {
+        font-size: 1.1rem;
+    }
+
+    .video-lesson {
+        width: 16em;
+        height: 10em;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        padding: 5%;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1.5rem;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .site-logo {
+        width: 25em;
+        height: auto;
+    }
+
+    .hburg-menu {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 3%;
+        left: 20%;
+    }
+
+    .menuItem {
+        display: block;
+    }
+
+    .fa-xmark {
+        font-size: 2.5em;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .container {
+        font-size: 1.1rem;
+    }
+
+    .video-lesson {
+        width: 20em;
+        height: 12em;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 5%;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1.5rem;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .hburg-menu {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 3%;
+        left: 40%
+    }
+
+    .menuItem {
+        display: block;
+    }
+
+    .fa-xmark {
+        font-size: 2.5em;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .container {
+        font-size: 1.1rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2%;
+        font-size: 1.1rem;
+    }
+
+    .video-lesson {
+        width: 30em;
+        height: 18em;
+    }
+}
