@@ -6,9 +6,9 @@ const artistSchema = new Schema ({
         type: String,
         required: true
     },
-    tabLinks: [
-        // this will contain all the links to the tabs associated with the artist as soon as I figure out how to do that haha kill me
-    ]
+    // tabLinks: [
+    //     // this will contain all the links to the tabs associated with the artist as soon as I figure out how to do that haha kill me
+    // ]
 })
 
 const Artist = mongoose.model('Artist', artistSchema);
