@@ -180,7 +180,7 @@ h1, h2, h3, h4 {
     font-size: 1.15em;
 }
 
-.nav-bar-item:active, .footer-link:active, .menuItem:active {
+.nav-bar-item:active, .footer-link:active, .menuItem:active, .dev-info-item:active, .fa-brands:active {
     color: red;
 }
 
