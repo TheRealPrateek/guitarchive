@@ -4,9 +4,9 @@ const artistController = require('../controllers/artist-ctrl');
 
 router.route('/') 
     .get(artistController.artists);
-router.route('/artists/:artistId')
+router.route('/:artistId')
     .get(artistController.artistSongs);
-router.route('/artists/:artistId/:tabId')
+router.route('/:artistId/:tabId')
     .get(artistController.tab);
 
 module.exports = router;

@@ -3,7 +3,12 @@
     <div class="container artist-index">
         <h1>Browse tabs by artist name</h1>
         <a href="/tabs">Browse tabs by song name</a>
-        <h1>A - C</h1>
+        <ul>
+            <% for (musician of musicians) { %>
+                <li><%= musician.name %></li>
+            <% } %>
+        </ul>
+        <!-- <h1>A - C</h1>
             <ul>
                 <li>AC/DC</li>
                 <li>Alabama Shakes</li>
@@ -66,6 +71,7 @@
                 <li>Yola</li>
                 <li>Yo La Tengo</li>
             </ul>
+        </ul> -->
         <br>
         <a href="/tabs">Browse tabs by song name</a>
     </div>

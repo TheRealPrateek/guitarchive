@@ -8,7 +8,5 @@ router.route('/about')
     .get(siteController.about);
 router.route('/login')
     .get(siteController.login);
-router.route('/tabs')
-    .get(siteController.tabs);
 
 module.exports = router;

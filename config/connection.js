@@ -1,3 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MDB_URL);
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect(process.env.MDB_URL)};
