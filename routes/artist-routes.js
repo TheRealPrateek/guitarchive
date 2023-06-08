@@ -6,7 +6,5 @@ router.route('/')
     .get(artistController.artists);
 router.route('/:artistId')
     .get(artistController.artistSongs);
-router.route('/:artistId/:tabId')
-    .get(artistController.tab);
 
 module.exports = router;

@@ -2,11 +2,11 @@
 <%- include('../partials/nav') -%>
     <div class="container">
         <article class="about">
-            <h1>Slow Turning (John Hiatt)</h1>
-            <a href="../../public/pdfs/Slow Turning (John Hiatt).pdf"></a>
+            <h1><%= tab.name %>(<%= tab.artist %>)</h1>
+            <a href="../../public/pdfs/<%= tab.file %>"></a>
             <br>
             <h2>Video Lesson:</h2>
-            <iframe class="video-lesson" src="https://www.youtube.com/embed/s62fUkKKEa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="video-lesson" src="<%= tab.videoLink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </article>
     </div>
     <div class="scroll-up-container">

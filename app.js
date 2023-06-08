@@ -11,6 +11,8 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
+require('./config/connection')
+
 app.listen(process.env.PORT, () => {
     console.log(`The server is listening on host ${process.env.PORT}`)
     console.log(`http://localhost:${process.env.PORT}/`)
