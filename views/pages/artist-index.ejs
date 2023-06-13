@@ -5,9 +5,9 @@
         <a href="/tabs">Browse tabs by song name</a>
         <ul>
             <br>
-            <% for (let musician of musicians) { %>
-                <a href="/artists/<%= musician.id %>">
-                    <li><%= musician.name %></li>
+            <% for (let tab of tabs) { %>
+                <a href="/tabs/artists/<%= tab.artist %>">
+                <li><%= tab.artist %></li>
                 </a>
                 <br>
             <% } %>

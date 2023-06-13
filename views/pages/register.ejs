@@ -1,8 +1,8 @@
 <%- include('../partials/head') -%>
 <%- include('../partials/nav') -%>
     <div class="container">
-        <form class="form login" action="/login" method="post">
-            <h1>LOGIN</h1>
+        <form class="form login" action="/register" method="post">
+            <h1>SIGN UP</h1>
             <div class="form-field">
                 <label for="username">User name: </label>
                 <input type="username" name="username" id="username" placeholder="User name">
@@ -12,11 +12,11 @@
                 <label for="password">Password: </label><input type="password" name="password" id="password" placeholder="Password">
             </div>
             <br>
-            <input type="submit" value="Log in" id="submit-button">
+            <input type="submit" value="Sign up" id="submit-button">
             <br>
-            <a href="/auth/google">Click here to sign in with Google.</a>
+            <a href="/auth/google">Click here to create an account with Google.</a>
             <br>
-            Don't have an account? <a href="/register">Click here to sign up!</a>
+            Already have an account? <a href="/login">Click here to sign in!</a>
         </form>
     </div>
 <%- include('../partials/footer') -%>

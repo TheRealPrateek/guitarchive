@@ -2,8 +2,8 @@
 <%- include('../partials/nav') -%>
     <div class="container">
         <article class="about">
-            <h1><%= tab.name %>(<%= tab.artist %>)</h1>
-            <img src="../../public/img/<%= tab.file %>">
+            <h1><%= tab.name %> (<%= tab.artist %>)</h1>
+            <object data="/pdf/<%= tab.file %>" type="application/pdf" height="1100" width ="850"></object>
             <br>
             <h2>Video Lesson:</h2>
             <iframe class="video-lesson" src="<%= tab.videoLink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
