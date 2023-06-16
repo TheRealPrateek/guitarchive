@@ -15,11 +15,10 @@ module.exports = {
         response.render('pages/log-in')
     },
     loginPost: (request, response) => {
-        const {username, password, googleId} = request.body;
+        const {username, password} = request.body;
         const user = new User({
           username: username,
           password: password,
-          googleId: googleId
         });
         request.login(user, (error) => {
             if (error) {
