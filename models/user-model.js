@@ -42,7 +42,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy ({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/profile"
+    callbackURL: "https://lazy-rose-crow-ring.cyclic.app/auth/google/profile"
     },
     // always change line 45 to reflect the most recent version of the site (ie when you deploy)
 function (accessToken, refreshToken, email, cb) {
