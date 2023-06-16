@@ -31,8 +31,3 @@ app.listen(process.env.PORT, () => {
     console.log(`http://localhost:${process.env.PORT}/`)
 });
 
-// PORT=3000
-// MDB_URL=mongodb+srv://poddarp312:k1wOjSRxo9e7ZIvj@cluster0.l4ey0v3.mongodb.net/guitarchive?retryWrites=true&w=majority
-// CLIENT_ID=772312659080-a6lbkmf14vq09odf93lrnauh9nopphof.apps.googleusercontent.com
-// CLIENT_SECRET=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
-// SECRET_KEY=keyboard cat
