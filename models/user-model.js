@@ -8,11 +8,9 @@ const {Schema} = mongoose;
 const userSchema = new Schema ({
     username: {
         type: String,
-        required: [true, "Please enter your user name."]
     },
     password: {
         type: String,
-        required: [true, "Please enter your password."]
     },
     googleId: {
         type: String
