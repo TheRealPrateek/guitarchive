@@ -1,22 +1,26 @@
 <%- include('../partials/head') -%>
 <%- include('../partials/nav') -%>
     <div class="container">
-        <form action="#" method="post">
+        <form class="upload" action="/tabs/new" method="post">
             <h1>Upload your own tab!</h1>
             <p>
-                <label for="title">Title:</label>
-                <input type="text" id="title" value="title">
-                <label for="artist"></label>
-                <input type="text" id="artist" value="artist">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </p>
+            <p>
+                <label for="artist">Artist</label>
+                <input type="text" name="artist" id="artist" placeholder="Artist">
             </p>
             <p>
                 Make sure that your tab/chart is clear and easy to read.
             </p>
-            <input class="file=upload" type="file">
+            <input class="file=upload" type="file" name="file">
             <p>
-                <label for="videoLesson">Know a video that teaches how to play this song? Link it here:</label>
-                <input id="videoLesson" type="url">
-                <input type="submit">
+                <label for="videoLink">Know a video that teaches how to play this song? Link it here:</label>
+                <input type="url" name="videoLink" id="videoLink" placeholder="Link">
+            </p>
+            <p>
+                <input type="submit" value="Create tab">
             </p>
         </form>
     </div>

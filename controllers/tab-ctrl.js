@@ -41,5 +41,36 @@ module.exports = {
         }).catch(function(error) {
             console.log(error)
         })
+    },
+    createTabPost: (request, response) => {
+        const {name, artist, file, videoLink} = request.body;
+        const newTab = new Tab ({
+            name: name,
+            artist: artist,
+            file: file,
+            videoLink: videoLink
+        });
+        newTab.save();
+        response.redirect('/profile');
+    },
+    updateTabPut: (request, response) => {
+        let tabId = request.params.id;
+        const {name, artist, file, videoLink} = request.body;
+        Comic.findByIdAndUpdate(tabId, { $set: { 
+            name: name,
+            artist: artist,
+            file: file,
+            videoLink: videoLink
+        }}).catch(function(error) {
+            console.log(error);
+        })
+        response.redirect('/profile');
+    },
+    deleteTab: (request, response) => {
+        let tabId = request.params.id;
+        Tab.findByIdAndDelete(tabId).catch(function(error){
+            console.log(error)
+        });
+        response.redirect('/profile');
     }
 }

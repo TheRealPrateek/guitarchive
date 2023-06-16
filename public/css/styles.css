@@ -246,6 +246,18 @@ body {
     align-items: center;
 }
 
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .video-lesson {
     width: 50em;
     height: 30em;
