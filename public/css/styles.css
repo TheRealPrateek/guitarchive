@@ -263,6 +263,11 @@ body {
     height: 30em;
 }
 
+.tab-display {
+    width: 55em;
+    height: 70em;
+}
+
 /* media queries */
 
 @media screen and (max-width: 320px) {
@@ -328,6 +333,11 @@ body {
     .video-lesson {
         width: 10em;
         height: 6em;
+    }
+
+    .tab-display {
+        width: 10em;
+        height: 12em;
     }
 
     .footer-container {
@@ -405,6 +415,11 @@ body {
         height: 10em;
     }
 
+    .tab-display {
+        width: 16em;
+        height: 20em;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -468,6 +483,11 @@ body {
     .video-lesson {
         width: 20em;
         height: 12em;
+    }
+
+    .tab-display {
+        width: 20em;
+        height: 25em;
     }
 
     .footer-container {
@@ -535,5 +555,10 @@ body {
     .video-lesson {
         width: 30em;
         height: 18em;
+    }
+
+    .tab-display {
+        width: 30em;
+        height: 35em;
     }
 }
