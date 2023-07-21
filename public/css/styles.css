@@ -547,7 +547,7 @@ body {
     .footer-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin-left: 2%;
         font-size: 1.1rem;
     }
