@@ -16,6 +16,13 @@ function toggleMenu() {
   }
 };
 
+window.onscroll = function removeMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    menuIcon.style.display = "block";
+  }
+};
+
 //nav bar drop-down menu
 
 const tabMenu = document.querySelector(".tab-drop-down-menu");
@@ -29,6 +36,12 @@ function tabDropDown(){
   }
 };
 
+window.onscroll = function removeTabMenu() {
+    if (tabMenu.classList.contains("showTabMenu")) {
+      tabMenu.classList.remove("showTabMenu");
+    }
+  };
+  
 // back to top button
 
 function scrollUp() {
