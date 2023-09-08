@@ -37,10 +37,10 @@ function tabDropDown(){
 };
 
 window.onscroll = function removeTabMenu() {
-    if (tabMenu.classList.contains("showTabMenu")) {
-      tabMenu.classList.remove("showTabMenu");
-    }
-  };
+  if (tabMenu.classList.contains("showTabMenu")) {
+    tabMenu.classList.remove("showTabMenu");
+  }
+};
   
 // back to top button
 
