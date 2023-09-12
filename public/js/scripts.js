@@ -16,12 +16,16 @@ function toggleMenu() {
   }
 };
 
+// below code isn't working - keep trying to debug
+
 window.onscroll = function removeMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    menuIcon.style.display = "block";
+    // menuIcon.style.display = "block";
   }
 };
+
+// above code isn't working - keep trying to debug
 
 //nav bar drop-down menu
 
