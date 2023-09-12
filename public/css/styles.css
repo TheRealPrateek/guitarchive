@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 .menu {
     display: none;
     position: fixed;
-    transform: translateY(-200%);
+    transform: translateY(-100%);
     transition: transform 0.3s;
     top: 0;
     right: 0;
