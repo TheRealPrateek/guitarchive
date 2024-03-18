@@ -1,6 +1,17 @@
+const { Query } = require('mongoose')
 const Tab = require('../models/tab-model')
 
 module.exports = {
+    // searchTab: async function (request, response) {
+    //     try {
+    //         const search = await Tab.aggregate([
+    //             {$search: {index: "Index1", text: {query: "something that references the query from the search bar", path: {wildcard: "*"}}}
+    //             }
+    //         ]);
+    //     } catch (error) {
+            
+    //     }
+    // },
     artistIndex: async function (request, response) {
         Tab.find({}).then(function(tabs) {
             response.render('pages/artist-index', {

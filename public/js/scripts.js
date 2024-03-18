@@ -51,3 +51,19 @@ window.onscroll = function removeTabMenu() {
 function scrollUp() {
   window.scrollTo(0, 0);
 }
+
+// search bar
+
+const sb = document.getElementById('searchbar');
+const S = document.getElementById('Search');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'facebook.com';
+
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + '+' + S.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+
+sb.addEventListener('submit', submitted);

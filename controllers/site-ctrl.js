@@ -1,5 +1,6 @@
 const passport = require('passport');
 const User = require('../models/user-model');
+const { request, response } = require('express');
 
 module.exports = {
     home: (request, response) => {
@@ -9,6 +10,7 @@ module.exports = {
         response.render('pages/about')
     },
     search: (request, response) => {
+        
         response.render('pages/underCon')
     },
     login: (request, response) => {
