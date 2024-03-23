@@ -9,9 +9,11 @@ module.exports = {
     about: (request, response) => {
         response.render('pages/about')
     },
+    // search: (request, response) => {
+    //     response.render('pages/underCon')
+    // },
     search: (request, response) => {
-        
-        response.render('pages/underCon')
+        response.render('pages/results')
     },
     login: (request, response) => {
         response.render('pages/log-in')

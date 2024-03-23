@@ -5,11 +5,13 @@ module.exports = {
     // searchTab: async function (request, response) {
     //     try {
     //         const search = await Tab.aggregate([
-    //             {$search: {index: "Index1", text: {query: "something that references the query from the search bar", path: {wildcard: "*"}}}
-    //             }
+    //             {$search: {index: "Index1", text: {query: request.query, path: {wildcard: "*"}}}
+    //             },
+    //             response.render('pages/results')
     //         ]);
     //     } catch (error) {
-            
+    //         console.log(error)
+    //         response.render('pages/error')
     //     }
     // },
     artistIndex: async function (request, response) {
